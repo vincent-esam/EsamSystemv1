@@ -1,0 +1,282 @@
+.login-container {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre imagen y formulario */
+  align-items: stretch; /* Hacer que ambos elementos crezcan juntos */
+  min-height: 97vh; /* Asegurar altura mínima de pantalla */
+  width: 98.2vw; /* Ocupar todo el ancho de la pantalla */
+  padding: 0; /* Quitar padding */
+  margin: 0; /* Quitar margen */
+  background-color: #f4f4f4; /* Fondo opcional */
+}
+
+.login-image {
+  flex: 0.6; /* Ocupa el 60% del espacio horizontal */
+  height: auto;
+  background: url('/images/esam-cover.jpeg') center/cover  no-repeat;
+}
+
+.login-box {
+  flex: 1; /* Ocupa el 40% del espacio horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el formulario verticalmente */
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  
+}
+.register-box {
+  flex: 1; /* Ocupa el 40% del espacio horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el formulario verticalmente */
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0b5f9a;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinear elementos al centro */
+  gap: 1rem;
+  padding-left: 38px;
+  
+}
+
+.login-input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Borde más suave */
+  border-radius: 8px;
+  width: 85%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+/* Estilo para la caja de la contraseña */
+
+.password-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 191%;
+  margin: 0; /* Asegúrate de que no haya márgenes adicionales */
+  padding: 0;
+  padding-left: 0;
+}
+
+.password-group input {
+  flex-grow: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  padding-left: 10px; /* Espacio para el icono */
+  position: relative; /* Hacemos el input relativo para posicionar el icono */
+}
+
+.password-group .toggle-password {
+  position: absolute; /* Posicionamos el icono dentro del input */
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.password-group .toggle-password svg {
+  fill: #0b5f9a; /* Color del icono */
+}
+.country-select-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 456%;
+  margin: 0;
+  padding: 0;
+}
+
+.country-select-group select {
+  -webkit-appearance: none; /* Oculta el estilo por defecto del select */
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff; /* Color de fondo del select */
+  color: #788aa2;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.country-select-group::after {
+  
+  content: "\25BC"; /* Símbolo de flecha hacia abajo */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Evita que el icono capture clics */
+}
+.country-select-group select:focus {
+  border-color: #66b2ff; /* Color deseado al enfocar */
+  box-shadow: 0 0 4px #66b2ff; /* Resaltar borde */
+  outline: none;
+}
+.login-input:focus {
+  border-color: #66b2ff; /* Color al enfocar */
+  box-shadow: 0 0 4px #66b2ff; /* Resaltar borde */
+  outline: none;
+}
+
+.login-button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(90deg, #0b5f9a, #1b74b3); /* Gradiente */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 91%; /* Igual ancho que los inputs */
+}
+.register-button{
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(90deg, #0b5f9a, #1b74b3); /* Gradiente */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 93%;
+}
+.register-button:hover{
+  background: linear-gradient(90deg, #1b74b3, #2d89d1);
+  transform: scale(1.02);
+}
+.login-button:hover {
+  background: linear-gradient(90deg, #1b74b3, #2d89d1);
+  transform: scale(1.02);
+}
+
+.login-error {
+  color: red;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+.register-message{
+  align-items: center;
+  color: #333;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.register-text {
+  align-items: center;
+  font-size: 17px;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.register-link {
+  color: #0b5f9a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #1b74b3;
+}
+.label-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #788aa2;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.form-date-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.form-date{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.date-select { /* Nueva clase para los selects de fecha */
+ width: 130px;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #788aa2;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-date select:focus {
+  border-color: #66b2ff; /* Color deseado al enfocar */
+  box-shadow: 0 0 4px #66b2ff; /* Resaltar borde */
+  outline: none;
+}
+
+.area-interest-container {
+  display: flex; 
+  
+}
+.area-interes {
+  display: flex; /* Added this line */
+  justify-content: space-between;
+  gap: 5px; /* Adjust for spacing */
+}
+.area-select{
+  width: 205px;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #788aa2;
+  font-size: 0.9rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.area-select:focus {
+  border-color: #66b2ff; /* Color deseado al enfocar */
+  box-shadow: 0 0 4px #66b2ff; /* Resaltar borde */
+  outline: none;
+}
+@media (max-width: 768px) {
+  .login-image {
+    display: none !important; /* Asegura que la imagen se oculte */
+  }
+
+  .login-box {
+    width: 100%; /* El formulario ocupa casi todo el ancho */
+  }
+}
+
+

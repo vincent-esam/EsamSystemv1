@@ -1,0 +1,37 @@
+---
+interface Props {
+  image: string;
+  title: string;
+  href: string;
+}
+
+const { image, title, href } = Astro.props;
+---
+
+<div class="cardLink">
+  <a href={href}>
+    <img class="boton" src={image} alt={title} height="250px" />
+  </a>
+</div>
+
+<style>
+  .cardLink {
+    width: 30.333333%;
+    display: inline-block;
+  }
+  .cardLink .boton {
+    margin: 15px;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 11px rgb(160, 163, 163);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 699px) {
+    .cardLink {
+      width: 100%;
+    }
+  }
+</style>

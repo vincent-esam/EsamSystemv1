@@ -1,0 +1,106 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+import SEO from "../components/seo/SEO.astro";
+import type { Preload } from "../types/Preload";
+import Toast from "../components/ui/Toast.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  preload?: Array<Preload>;
+  canonical?: string;
+  image?: string;
+}
+
+const { title, description, preload, canonical, image } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO
+      canonical={canonical}
+      description={description}
+      image={image}
+      preload={preload}
+      title={title}
+    />
+    <ViewTransitions />
+  </head>
+  <body>
+    <Header />
+    <main class="contenidoPrincipal">
+      <div class="mainContent">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+    <Toast />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-display: swap;
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/FuturaMdBTBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/FuturaMdBTMedium.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Futura";
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/FuturaMediumItalicfont.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Futura";
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/FuturaBoldItalicfont.ttf) format("truetype");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: linear-gradient(to right, #d3dce0, #beced3);
+  }
+  h1 {
+    font-family: "Futura";
+    font-variant: normal;
+    font-style: normal;
+    font-size: 25px;
+    color: #d3dce0;
+  }
+  h5 {
+    font-family: "Futura";
+    color: #777e7f;
+    padding: 3px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  .contenidoPrincipal {
+    padding: 35px;
+  }
+  .formContainer .contenidoPrincipal {
+  padding: 0; /* Sobrescribir el padding para SingleForm */
+}
+</style>

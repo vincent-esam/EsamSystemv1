@@ -1,0 +1,440 @@
+ {
+    "idDocente": 10,
+    "apellidoMaterno": "Olivera",
+    "apellidoPaterno": "Angulo",
+    "nombres": "Royer",
+    "numeroReferencia": null,
+    "correo": "royer.olivera@gmail.com",
+    "telefono": "76946430",
+    "numeroDocumento": "3596459",
+    "fechaNacimiento": "2010-07-05T04:00:00.000Z",
+    "ciudadRadicacion": "Cochabamba",
+    "genero": null,
+    "direccion": null,
+    "estado": "aprobado",
+    "fotografia": "/images/docentes/Amed.jpg",
+    "agendado": 1,
+    "sector": {
+      "nombre": "Arte y cultura"
+    },
+    "pais_docente": {
+      "nombre": "Bolivia"
+    },
+    "tipo_documento": {
+      "tipo": null
+    },
+    "estudiossuperiores": [
+      {
+        "pais": "Bolivia",
+        "tipo": "pregrado",
+        "fecha": "2019-12-04",
+        "nombre": "",
+        "carrera": "Ingenieria de sistemas",
+        "gradoTipo": "licenciatura",
+        "modalidad": "proyecto de grado ",
+        "universidad": "UCATEC"
+      },
+      {
+        "pais": "Bolivia",
+        "tipo": "pregrado",
+        "fecha": "2019-12-04",
+        "nombre": "",
+        "carrera": "Ingenieria de sistemas",
+        "gradoTipo": "licenciatura",
+        "modalidad": "proyecto de grado ",
+        "universidad": "UCATEC"
+      },
+      {
+        "pais": "Bolivia",
+        "tipo": "pregrado",
+        "fecha": "2019-12-04",
+        "nombre": "",
+        "carrera": "Ingenieria de sistemas",
+        "gradoTipo": "licenciatura",
+        "modalidad": "proyecto de grado ",
+        "universidad": "UCATEC"
+      },
+      {
+        "pais": "Bolivia",
+        "tipo": "postgrado",
+        "fecha": "2019-12-04",
+        "nombre": "Maestria en MAESTRIA EN DERECHO CONSTITUCIONAL Y PROCESAL CONSTITUCIONAL",
+        "carrera": "",
+        "gradoTipo": "maestria ",
+        "modalidad": "monografia",
+        "universidad": "UCATEC"
+      },
+      {
+        "pais": "Bolivia",
+        "tipo": "postgrado",
+        "fecha": "2019-12-04",
+        "nombre": "Maestria en MAESTRIA EN DERECHO CONSTITUCIONAL Y PROCESAL CONSTITUCIONAL",
+        "carrera": "",
+        "gradoTipo": "maestria ",
+        "modalidad": "monografia",
+        "universidad": "UCATEC"
+      },
+      {
+        "pais": "Bolivia",
+        "tipo": "postgrado",
+        "fecha": "2019-12-04",
+        "nombre": "Maestria en MAESTRIA EN DERECHO CONSTITUCIONAL Y PROCESAL CONSTITUCIONAL",
+        "carrera": "",
+        "gradoTipo": "maestria ",
+        "modalidad": "monografia",
+        "universidad": "UCATEC"
+      }
+    ],
+    "experienciasdocentes": [
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      },
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      },
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      },
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      },
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      },
+      {
+        "calidad": null,
+        "materia": null,
+        "concluidoEl": null,
+        "universidad": null,
+        "idExperiencia": null
+      }
+    ],
+    "idiomas": [
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      },
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      },
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      },
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      },
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      },
+      {
+        "oral": null,
+        "idioma": null,
+        "escucha": null,
+        "lectura": null,
+        "escritura": null,
+        "idIdiomaDocente": null
+      }
+    ],
+    "habilidades_blandas": [
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      },
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      },
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      },
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      },
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      },
+      {
+        "habilidad": null,
+        "idHabilidadBlanda": null
+      }
+    ],
+    "experienciaslaborales": [
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      },
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      },
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      },
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      },
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      },
+      {
+        "pais": null,
+        "cargo": null,
+        "ciudad": null,
+        "fechaFinal": null,
+        "referencia": {
+          "cargo": null,
+          "idReferencia": null,
+          "nombreCompleto": null,
+          "numeroContacto": null
+        },
+        "descripcion": null,
+        "fechaInicio": null,
+        "nombreEmpresa": null,
+        "idExperienciaLaboral": null
+      }
+    ],
+    "publicacionesintelectuales": [
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      },
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      },
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      },
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      },
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      },
+      {
+        "pais": null,
+        "fecha": null,
+        "nombre": null,
+        "enlaceEditorial": null,
+        "tipoPublicacion": null,
+        "idProduccionIntelectual": null
+      }
+    ],
+    "detalles": [
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      },
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      },
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      },
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      },
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      },
+      {
+        "link": "https://us04web.zoom.us/j/4694355596?pwd=c09VN25BTjJLTWdLTGNvd0h4Q1lHZz09",
+        "fecha": "2024-12-28 09:00:00"
+      }
+    ],
+    "areas": [
+      {
+        "idArea": 1
+      },
+      {
+        "idArea": 1
+      },
+      {
+        "idArea": 1
+      },
+      {
+        "idArea": 1
+      },
+      {
+        "idArea": 1
+      },
+      {
+        "idArea": 1
+      }
+    ],
+    "cursos": [
+      {
+        "anio": "2021-10-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      },
+      {
+        "anio": "2020-11-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      },
+      {
+        "anio": "2021-12-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      },
+      {
+        "anio": "2021-10-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      },
+      {
+        "anio": "2020-11-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      },
+      {
+        "anio": "2021-12-17",
+        "pais": "Bolivia",
+        "nombre": "Diplomado en DIPLOMADO EN DOCENCIA PARA LA EDUCACION SUPERIOR",
+        "universidad": "UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SAN FRANCISCO XAVIER DE CHUQUISACA"
+      }
+    ]
+  }

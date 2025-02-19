@@ -1,0 +1,122 @@
+[
+  {
+    "idDocente": 10,
+    "nombres": "Royer",
+    "apellidoPaterno": "Angulo",
+    "apellidoMaterno": "Olivera",
+    "correo": "royer.olivera@gmail.com",
+    "ciudadRadicacion": "Cochabamba",
+    "telefono": "76946430",
+    "numeroDocumento": "3596459",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 11,
+    "nombres": "Kevin",
+    "apellidoPaterno": "Soria",
+    "apellidoMaterno": "Martinez",
+    "correo": "kevin.soria@gmail.com",
+    "ciudadRadicacion": "Cochabamba",
+    "telefono": "79856321",
+    "numeroDocumento": "89654123",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 12,
+    "nombres": "Miranda",
+    "apellidoPaterno": "Ramos",
+    "apellidoMaterno": "Villarroel",
+    "correo": "miranda.ramos@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "74563219",
+    "numeroDocumento": "85964712",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 13,
+    "nombres": "Brayan",
+    "apellidoPaterno": "Chirinos",
+    "apellidoMaterno": "Patiño",
+    "correo": "brayan.chirinos@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "78965412",
+    "numeroDocumento": "78541236",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 0
+  },
+  {
+    "idDocente": 14,
+    "nombres": "Rosario",
+    "apellidoPaterno": "Lozano",
+    "apellidoMaterno": "Reynaga",
+    "correo": "rosario.lozano@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "78452361",
+    "numeroDocumento": "459863214",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 15,
+    "nombres": "Diego",
+    "apellidoPaterno": "Medrano",
+    "apellidoMaterno": "Lujan",
+    "correo": "diego.medrano@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "74589632",
+    "numeroDocumento": "78451236",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 0
+  },
+  {
+    "idDocente": 16,
+    "nombres": "Adriana",
+    "apellidoPaterno": "Ramos",
+    "apellidoMaterno": "Arias",
+    "correo": "adriana.ramos@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "74582631",
+    "numeroDocumento": "98653214",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 17,
+    "nombres": "Lilian",
+    "apellidoPaterno": "Zapallani",
+    "apellidoMaterno": "Gutierrez",
+    "correo": "lilian.zap@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "71458236",
+    "numeroDocumento": "78451236",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 0
+  },
+  {
+    "idDocente": 18,
+    "nombres": "Pedro",
+    "apellidoPaterno": "Guzman",
+    "apellidoMaterno": "Calle",
+    "correo": "pedro.calle@gmal.com",
+    "ciudadRadicacion": null,
+    "telefono": "74851269",
+    "numeroDocumento": "78451236",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 1
+  },
+  {
+    "idDocente": 19,
+    "nombres": "Ines",
+    "apellidoPaterno": "Navarro",
+    "apellidoMaterno": "Cossio",
+    "correo": "ines.navarro@gmail.com",
+    "ciudadRadicacion": null,
+    "telefono": "74159862",
+    "numeroDocumento": "78451236",
+    "fotografia": "/images/docentes/imagenEjemplo.png",
+    "agendado": 0
+  }
+]

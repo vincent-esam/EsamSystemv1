@@ -1,0 +1,54 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/PW20_styles.css" />
+    <link rel="stylesheet" href="/css/PW20_media.css" />
+    <link rel="stylesheet" href="/css/PW20_consultation.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/countrySelect.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/PW20_header_separate.css"
+    />
+    <link rel="stylesheet" href="/css/pw-ui.min.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Header />
+    <main class="contenidoPrincipal">
+      <div class="mainContent">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+      is:inline></script>
+    <script src="../scripts/countrySelect.min.js"></script>
+    <script src="../scripts/PW20_header.js"></script>
+    <script src="../scripts/pw-ui.min.js"></script>
+    <script src="../scripts/PW20_consultation-form-live.js"></script>
+  </body>
+</html>

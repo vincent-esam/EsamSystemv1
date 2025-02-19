@@ -1,0 +1,356 @@
+/* Contenedor del botón "Regresar" */
+.back-button-container {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+/* Estilo del botón */
+.backbutton {
+  display: inline-flex; /* Para centrar el ícono */
+  align-items: center; /* Centra el ícono verticalmente */
+  justify-content: center; /* Centra el ícono horizontalmente */
+  padding: 8px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 50px; /* Tamaño fijo del botón */
+  height: 40px; /* Tamaño fijo del botón */
+}
+/* Tamaño del ícono */
+.back-icon {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover: agranda el ícono */
+.backbutton:hover .back-icon {
+  transform: scale(1.2); /* Aumenta el tamaño en un 20% */
+}
+
+/* Contenedor de botones */
+.buttons-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 50px; /* Espacio entre las columnas */
+  margin-top: 20px; /* Margen superior */
+  padding: 20px; /* Espacio interno opcional */
+}
+.buttonsCont {
+  display: flex;
+  flex-direction: row; /* Alinea los botones en columna */
+  gap: 50px; /* Espaciado entre los botones */
+  align-items: center;
+}
+/* Botones columna izquierda */
+.left-buttons {
+  display: flex; /* Cambia a diseño en fila */
+  flex-direction: row; /* Asegura que los elementos estén en línea */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 10px; /* Espacio entre Descargar PDF y Reunión Agendada */
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: row; /* Asegura que los botones estén en línea */
+  gap: 20px; /* Espacio entre botones */
+  align-items: center; /* Alinea los botones verticalmente al centro */
+  justify-content: flex-start; /* Opcional: Alinea los botones al inicio del contenedor */
+  flex-wrap: nowrap; /* Evita que los botones salten a una nueva línea */
+}
+
+
+.buttons-container button,
+.buttons-container a {
+  width: auto; /* Ajusta automáticamente al contenido */
+  min-width: 130px; /* Ancho mínimo para botones */
+  height: 50px; /* Mantén altura constante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons-container button:hover,
+.buttons-container a:hover {
+  transform: translateY(-2px);
+}
+/* Estilo del botón de descarga (sin fondo ni borde) */
+.download-btn {
+  border: none; /* Sin borde */
+  background: none; /* Sin fondo */
+  padding: 0; /* Elimina cualquier relleno */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Mantén el efecto hover */
+  outline: none;
+  height: auto; /* Deja que el ícono defina el tamaño */
+  width: auto; 
+}
+
+/* Estilo del ícono */
+.download-icon {
+  width: 50px; /* Aumenta el tamaño del ícono */
+  height: 50px; /* Aumenta el tamaño del ícono */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para el ícono */
+.download-btn:hover .download-icon {
+  transform: scale(1.05); /* Efecto de zoom para el icono */
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ícono alineado a la izquierda */
+  background-color: #2ecc71; /* Verde para aprobado */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Botón redondeado */
+  padding: 5px 15px; /* Espaciado interno más pequeño */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+  position: relative; /* Para posicionar el círculo */
+  overflow: visible; /* Permite que el círculo sobresalga del botón */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 120px; /* Ancho mínimo del botón */
+  height: 40px; /* Altura del botón */
+}
+
+/* Botón Rechazar */
+.reject-button {
+  background-color: #e74c3c; /* Rojo para rechazado */
+}
+
+/* Hover en los botones */
+.custom-button:hover {
+  transform: translateY(-3px); /* Efecto de levantamiento */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Ícono dentro de los botones */
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%; /* Círculo perfecto */
+  width: 50px; /* Tamaño reducido */
+  height: 50px;
+  position: absolute; /* Posición absoluta para sobresalir */
+  left: -15px; /* Ajusta el desplazamiento hacia la izquierda */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Centrado respecto al botón */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el círculo */
+}
+
+/* Ícono */
+.icon-button {
+  width: 35px; /* Tamaño del ícono reducido */
+  height: 35px;
+}
+
+/* Texto dentro del botón */
+.button-text {
+  margin-left: 25px; /* Espaciado para evitar que el texto se superponga al círculo */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 14px; /* Texto más pequeño */
+}
+
+/* Animación al hacer clic */
+.custom-button:active {
+  transform: scale(0.95); /* Reduce ligeramente el tamaño */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajusta el cuadro de reunión para que ocupe menos espacio */
+.meeting-details {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  width: 200x; /* Ajusta el ancho */
+}
+
+.meeting-details h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.meeting-details p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.meeting-details p strong {
+  color: #2196F3;
+}
+  
+  .meeting-details a {
+    margin-top: 3px;
+    background-color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold; 
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  
+  .v-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+  }
+  
+  .v-btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo */
+    transform: translateY(-3px); /* Eleva el botón al pasar el mouse */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  }
+  
+  .v-btn:active {
+    transform: scale(0.97); /* Efecto de clic (ligera reducción) */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+  }
+  .cancel-btn {
+    background-color: #ccc;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #999;
+  }
+
+  
+/* Estilo común para ambos campos */
+.schedule-meeting-container .zoom-input,
+.schedule-meeting-container .react-datepicker-wrapper {
+  width: 100%; /* Hacerlos del mismo tamaño */
+  max-width: 800px; /* Limitar el ancho máximo */
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box; /* Para asegurarse de que el padding no afecte el tamaño */
+}
+
+/* Estilo cuando se selecciona un campo (input o DatePicker) */
+.schedule-meeting-container .zoom-input:focus,
+.schedule-meeting-container .react-datepicker__input-container input:focus{
+  outline: none;
+  border-color: #007bff; 
+}
+
+.react-datepicker__input-container input {
+    width: 100%; 
+    padding: 10px;
+    margin: 0; 
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+   
+  }
+
+  .schedule-meeting-container .react-datepicker-wrapper {
+    margin: 0 !important; /* Eliminar márgenes adicionales */
+    padding: 0 !important; /* Asegurarse que no haya padding extra */
+  }
+
+.react-datepicker__navigation {
+    background-color: transparent !important; /* Fondo transparente para el botón */
+    border: none !important; /* Sin borde */
+    color: inherit !important; /* Heredar el color del texto general */
+    font-size: 24px !important; /* Tamaño adecuado para los iconos */
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Asegura que los botones de navegación estén correctamente alineados */
+.react-datepicker__header {
+    display: flex; /* Usamos flex para el encabezado */
+    flex-direction: column; /* Cambiamos la dirección a columna para separar el mes y los días */
+    align-items: center; /* Alineamos el mes en el centro */
+    padding: 0; /* Sin padding extra */
+}
+
+/* El mes debe estar centrado y en su lugar */
+.react-datepicker__current-month {
+    text-align: center; /* Centra el mes */
+    font-size: 16px; /* Ajuste del tamaño del mes si es necesario */
+}
+
+/* Aseguramos que los días estén en una fila debajo del mes */
+.react-datepicker__day-names {
+    display: flex; /* Los días de la semana estarán en fila */
+    justify-content: space-between; /* Espaciado entre los días */
+    width: 100%; /* Asegura que los días se distribuyan correctamente */
+    margin-top: 15px; /* Espacio entre el mes y los días */
+}
+
+/* Estilos para el botón "Ver Archivos" */
+.view-files {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.view-files .button {
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.view-files .button:hover {
+  background-color: #0056b3; 
+  cursor: pointer; 
+}
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  

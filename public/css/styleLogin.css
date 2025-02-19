@@ -1,0 +1,326 @@
+
+body{
+    background-image: linear-gradient(to right, #095b95,#01101a);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Futura';
+    /* src: url(../font/Futura\ Md\ BT\ Bold.ttf); */
+    font-weight: bold;
+    font-style: bold;
+
+    display: flex;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    min-height: 100%;
+    width: 100%;
+    
+    
+}
+
+.contenedorID{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    gap: 50px;
+    justify-items: right;
+    /* align-items: center;  */
+
+    overflow: hidden;
+    
+    
+    
+    width: 100%;
+    padding: 0px;
+    background-size: cover;
+    
+
+    animation-name: iniciar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.contenedorLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+#ContendedorImaVideo{
+    position: relative;
+} 
+#miVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 170px;
+    width: 98%;
+    opacity:0.7;
+    margin-left: 10px;
+
+
+    background-color: #162d4a80;
+
+}
+
+#img_Portada{
+    
+    width:100%;
+    height: 100vh;
+}
+
+
+
+
+
+@media (max-width:676px){
+    body{
+        justify-content: start;
+
+        
+        overflow: hidden; 
+        
+    }
+
+    .contenedorID{
+        transform: scale(0.9);
+        margin-left: -200px;
+
+        
+        
+    }
+    #CuadradoSVGlogin{
+        
+        margin-left: -150px;
+        
+    }
+    .formulario{
+        left: -150px;
+        
+    }
+    .fondoImg{
+        
+        margin-left: -220px;
+        width: 500px;
+    }
+  
+  }
+@media (max-width:1800px)  {
+
+    .contenedorID{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+        margin-left: 10%;
+        overflow:visible; 
+        
+        
+    }
+    body{
+        background: 
+        linear-gradient(to right, rgba(9,91,149,0.95),rgba(1,16,26,0.9)),url(/img/curso.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        
+    }
+    #img_Portada{
+        position: absolute;
+        z-index: -2;
+        display: none;
+      
+    }
+ 
+  
+    /* #img_Portada{
+        z-index: -1;
+        position: absolute;
+        margin-top: -50px;
+        opacity: 8%; 
+             
+    }
+    .fondoImg{
+        width: 500%;
+    } */
+    #CuadradoSVGlogin{
+        /* width: 280%; */ 
+           
+
+        width: 32rem;
+        margin-top: -30px;
+        transform: scaleY(1.1);
+        transform: scaleX(0.9);     
+    }
+    form{
+        margin-left: -8%;
+    }
+    .formulario{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 31%;
+        margin-right: 31%;
+        
+    }
+
+    
+}
+
+@keyframes iniciar {
+    0%{
+        margin-top: 5%;
+        
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        
+        margin-top: 0;
+    }
+    
+}
+@keyframes tamanio {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+form{
+    position: relative;
+    margin-top: 130px;
+    
+    
+}
+#CuadradoSVGlogin{
+    
+    /* width: 280%; */
+    width: 62rem;
+    
+    
+    
+    
+}
+.formulario{
+    
+  margin-top: -600px;
+}
+
+
+.fondoImg{
+    
+    justify-items: center;
+    
+}
+
+::placeholder{
+    
+    src: url(../font/Futura\ Md\ BT\ Medium.ttf);
+    font-variant: normal;
+    font-style: normal;
+    font-weight: initial;
+
+    color: rgba(255, 255, 255, 0.308);
+    
+}
+input{
+    
+    display: grid;
+    justify-items: center;
+    width: 250px;
+    height: 20px;
+    padding: .9em;
+    color: #ffffff;
+    text-indent: 40px;
+
+    src: url(../font/Futura\ Md\ BT\ Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+    
+    background:rgb(131, 162, 166,0%);    
+    outline: none;
+    border: 0px solid;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.308);
+    font-size: 20px;
+    &:hover{
+        border: 0px solid;
+        border-bottom: 2px solid #babd0f;
+    }
+}
+.datos{
+   
+   margin-top: 0%;
+   /* justify-items: center;
+    align-items: center; */
+   justify-content: center;
+    
+   display: grid;
+   height: 150px;
+   gap: 20px;
+   padding: 40px;
+   font-size: 30px;
+}
+img.iconos{
+   
+    cursor: pointer;
+    margin-left: 15px;
+
+   &:hover{
+    
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    
+    filter: invert(81%) sepia(100%) saturate(510%) hue-rotate(357deg) brightness(350%) contrast(105%);
+    }
+
+}
+label{
+    margin-top: -72px;
+}
+#enter{
+    display: grid;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    background-image: linear-gradient(to right, #3660d6,#267dd3,#14b5db);
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    width: 300px;
+    text-indent: 0px;
+    color: white;
+    margin-bottom: 15%;
+    
+    border: none;
+    &:hover{
+     cursor: pointer;
+     
+     background-image: linear-gradient(to right, #af7e14,#bd940f,#babd0f);
+     
+     
+     src: url(../font/Futura\ Md\ BT\ Medium.ttf);
+     font-weight: bold;
+     font-style: bold;
+     color: white;
+    
+     
+    
+    }
+ }

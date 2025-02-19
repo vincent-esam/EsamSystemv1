@@ -1,0 +1,214 @@
+---
+import HeaderCarta from "./cartaInvitacion/HeaderCarta.astro";
+import FooterCarta from "./cartaInvitacion/FooterCarta.astro";
+import "../../styles/programaInfo.css";
+
+const { programa, modulo } = Astro.props;
+---
+
+<div class="invitation-wrapper">
+  <!-- Primera hoja -->
+  <div class="invitation-container">
+    <HeaderCarta />
+
+    <div class="invitation-content">
+      <p class="date-place">
+        Cochabamba {new Date().toLocaleDateString()}
+        <br />
+        ID Programa: {programa.id_programa}, ID Módulo: {modulo.id}
+      </p>
+      <p>
+        A: {modulo.docente}
+      </p>
+      <p>
+        De: ALEJANDRA RODRIGUEZ
+        <br />
+        <strong>COORDINADORA DE PROGRAMA</strong>
+      </p>
+      <p class="ref">
+        REF: INVITACIÓN PARA IMPARTIR DOCENCIA EN:
+        <br />
+        MO: {modulo.nombre}
+        <br />
+        DIPLOMADO EN {programa.diplomado}
+      </p>
+      <p class="body-text">
+        Estimado/a Docente:
+        <br />
+        Como preámbulo, reciba usted un cordial saludo y nuestros deseos
+        de éxito en las labores que desempeña como profesional sobresaliente,
+        conocedores de su amplia experiencia profesional y conocimientos
+        academicos, nos permitimos hacerle la presente invitacion para que pueda
+        formar parte de nuestro selecto plantel docente, y pueda compartir sus
+        conocimientos y eperiencias. La escuela de negocios ESAM esta avalada
+        bajo convenio con la universidad Nacional Siglo XX, seguros de contar
+        con su valiosa participacion, comparto el cronograma y el contenido
+        minimo del modulo, asi como todo lo relacionado a la estructura de
+        calificacion y honorarios profesionales.
+      </p>
+
+      <h3>1. CRONOGRAMA Y CONTENIDO</h3>
+      <table class="cronograma">
+        <thead>
+          <tr>
+            <th>Contenidos mínimos tentativos</th>
+            <th>Sesión</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+        
+            Object.entries(modulo.fecha_de_clases[0]).map(([sesion, fecha], index) => (
+              <tr>
+                <td>{modulo.contenido_minimo}</td>
+                <td>Sesión Clase {index + 1}</td>
+                <td>{fecha}</td>
+                <td>
+                  {modulo.hora_inicio} - {modulo.hora_fin}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+
+      <p class="body-text">
+        Los contenidos minimos del módulo al cual se le invita a participar, pueden ser ampliados y mejorados siempre
+        que cumpla con el enfoque del programa.
+      </p>
+    </div>
+    <FooterCarta/>
+  </div>
+
+  <!-- Segunda hoja -->
+  <div class="invitation-container second-page">
+    <HeaderCarta />
+
+    <div class="invitation-content">
+      <h3>2. METODOLOGÍA ACADÉMICA</h3>
+      <ul>
+        <li>
+          <strong>Plataforma Zoom</strong> (Plataforma sincrónica) donde se llevan a cabo las clases de
+          manera semanal y en donde los posgraduantes realizan sus dudas,
+          consultas e interacción con el docente.
+        </li>
+        
+      <li>
+        <strong>Plataforma Moodle</strong> (Plataforma asincrónica) donde se realizan las actividades y
+        evaluaciones hacia los posgraduantes, por ello a su persona se le asigna un usuario y contraseña,
+        para ingresar a través de la siguiente URL (direccion de la platafoma):{" "}
+        <a href="https://esam.edu.bo/moodle/login">
+          https://esam.edu.bo/moodle/login
+        </a>
+      </li>
+        
+      </ul>
+
+      <h3>3. PLANIFICACIÓN ACADÉMICA</h3>
+      <p>
+        Deberá subir una semana antes de cada clase la siguiente documentacion:
+      </p>
+      <ul>
+        <li>
+          Plan global de la materia (nombre del módulo, objetivos específicos de
+          enseñanza, metodología, recursos didácticos y material bibliográfico).
+        </li>
+        <li>Diapositivas de la semana.</li>
+        <li>
+          Todo el material bibliográfico de consulta (artículos, documentos
+          referentes, enlaces, etc.).
+        </li>
+        <li>Todas las actividades evaluativas con solucionarios.</li>
+        <li>Cápsulas resumen de videos.</li>
+      </ul>
+      <p>
+        <em>
+          * Las actividades planificadas deben estar orientadas a la práctica
+          contextual real.
+        </em>
+      </p>
+
+      <h3>4. METODOLOGÍA PARA LAS EVALUACIONES</h3>
+      <p>
+        Las calificaciones deben registrarse en la Plataforma Moodle de acuerdo
+        al cronograma, siendo obligatoria la entrega de un respaldo en formato
+        PDF al correo{" "}
+        <a href="mailto:alejandra.rodriguez@esam.edu.bo">
+          alejandra.rodriguez@esam.edu.bo
+        </a>
+        .
+      </p>
+
+      <h3>5. OBLIGACIONES DEL DOCENTE</h3>
+      <ul>
+        <li>
+          Enviar Hoja de Vida documentada para la carpeta académica en formato
+          PDF.
+        </li>
+        <li>
+          Presentar el plan global en la primera clase del módulo
+          correspondiente.
+        </li>
+        <li>
+          Presentar las siguientes actas:
+          <ul>
+            <li>Acta 01: Conclusión del módulo.</li>
+            <li>Acta 02: Plan de Desarrollo Curricular.</li>
+            <li>Acta 03: Planilla de Acta de Notas.</li>
+            <li>Acta 04: Desarrollo Curricular de Notas.</li>
+            <li>Acta 05: Planilla de Acta de Notas de Segunda Instancia.</li>
+          </ul>
+        </li>
+        <li>Presentarse de acuerdo al cronograma.</li>
+        <li>
+          Responsabilizarse de gestionar actividades en Moodle y responder dudas
+          de los posgraduantes.
+        </li>
+      </ul>
+    </div>
+
+    <FooterCarta/>
+  </div>
+<!-- TERCERA PAGINA-->
+  <div class="invitation-container third-page">
+    <HeaderCarta />
+
+    <div class="invitation-content">
+      <h3>6. HONORARIOS PROFESIONALES</h3>
+      <p>
+        A la conclusión del módulo en fechas establecidas en cronograma de
+        clases, deberá realizar la presentación de las actas 01, 02, 03, 04 de
+        manera obligatoria y 05 si corresponde, para realizar la solicitud de
+        desembolso de honorarios de Bs. 1775 (CON RETENCIÓN) los cuales serán
+        depositados al número de cuenta que sea brindado por su persona para el
+        abono en fechas 11 o 26 del mes.{" "}
+        <strong>
+          En caso de no presentar las actas, no se procede al cumplimiento del
+          depósito en fechas estipuladas
+        </strong>
+        , es responsabilidad del docente cumplir las fechas para la efectivación
+        de pago.
+      </p>
+      <p>
+        Asimismo aclarar que se enviará el formato de los informes y los mismos
+        deberán ser firmados y enviados vía correo electrónico.
+      </p>
+      <p>
+        <strong>Nota:</strong> Deberá emitir la factura correspondiente por los servicios
+        prestados a favor de{" "}
+        <strong>ESCUELA DE NEGOCIOS ESAM S.R.L.</strong> (NIT: 380096028) con el
+        detalle: Servicios Profesionales.
+      </p>
+      <p>
+        Para ello debe tener habilitado su NIT con la actividad{" "}
+        <strong>CONSULTORES, SERVICIOS PROFESIONALES Y TÉCNICOS</strong>{" "}
+        para la emisión de factura por Servicios Profesionales.
+      </p>
+      <p>Sin otro particular, me despido.</p>
+    </div>
+
+    <FooterCarta/>
+  </div>
+</div>

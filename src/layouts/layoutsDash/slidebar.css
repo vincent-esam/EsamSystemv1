@@ -1,0 +1,59 @@
+/* Contenedor principal del slidebar */
+.slidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1a202c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sección de bienvenida */
+  .welcome-section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .admin-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f7fafc;
+  }
+  
+  /* Nombre dinámico */
+  #docenteNombre {
+    font-weight: bold;
+    color: #63b3ed; /* Azul claro */
+  }
+  
+  /* Menú */
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .menu-item {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .menu-item a{
+    color: #e2e8f0;
+    text-decoration: none;
+    display: block;
+}
+  .menu-item:hover a {
+    color: #63b3ed; /* Azul claro */
+  }
+  .menu-item:hover {
+    background-color: #2d3748; /* Gris más oscuro */
+    color: #63b3ed; /* Azul claro */
+  }

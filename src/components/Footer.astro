@@ -1,0 +1,108 @@
+<footer>
+  <div class="piePagina">
+    <div>
+      <div class="redesSociales">
+        <a
+          href="https://www.facebook.com/esamcochabambasucursal"
+          target="_blank"
+          ><img
+            class="ico"
+            src="/images/svg/facebook.svg"
+            alt=""
+            width="25px"
+          /></a
+        >
+        <a
+          href="https://www.instagram.com/esamcochabambasucursal/"
+          target="_blank"
+          ><img
+            class="ico"
+            src="/images/svg/instagram.svg"
+            alt=""
+            width="28px"
+          /></a
+        >
+        <a
+          href="https://bo.linkedin.com/company/esamcochabambasucursal"
+          target="_blank"
+          ><img
+            class="ico"
+            src="/images/svg/linkedin.svg"
+            alt=""
+            width="25px"
+          /></a
+        >
+      </div>
+    </div>
+    <div>
+      <h5>©2024 ESAM COCHABAMBA SUCURSAL</h5>
+      <h5>TELEFONO: 44521541 - 71315551</h5>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: 9.5rem;
+    height: 120px;
+    width: 100%;
+    background-color: #b8c7cc;
+
+    position: relative;
+
+    /* position: fixed; */
+    bottom: 0px;
+  }
+  @media (max-width: 1500px) {
+    footer {
+      position: relative;
+      height: 120px;
+
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    footer {
+      position: relative;
+      height: 180px;
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+
+      justify-content: center;
+    }
+
+    @media (max-width: 1500px) {
+      footer {
+        position: relative;
+        height: 120px;
+
+        width: 100%;
+      }
+    }
+
+    #logoEsam {
+      background-image: url(/images/isotipo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 50px;
+    }
+    #titulo {
+      margin-left: 10px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .redesSociales {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .ico {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+</style>

@@ -1,0 +1,121 @@
+.invitation-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+.invitation-container, .second-page, .third-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 30cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: 1px solid #333;
+  padding-left: 80px;
+  padding-top: 28px;
+  padding-right: 80px;
+  padding-bottom: 28px;
+  page-break-after: always;
+  box-sizing: border-box; 
+}
+.invitation-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #900;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+  
+.logo {
+  width: 90px;
+  height: auto;
+  margin-right: 20px;
+}
+  
+  .header-text h1, .header-text h2, .header-text h3 {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .header-text h1 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .header-text h2 {
+    font-size: 17px;
+    color: #555;
+  }
+  
+  .header-text h3 {
+    font-size: 15px;
+    color: #777;
+  }
+  
+  .date-place {
+    text-align: right;
+    margin-top: 0;
+  }
+  
+  .ref {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: right; 
+  }
+  
+  .body-text {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  h3 {
+    margin-top: 30px;
+  }
+  
+  .cronograma {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .cronograma th, .cronograma td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    height: 30px
+  }
+  
+  .cronograma th {
+    background-color: #e0e0e0; 
+    height: 35px;
+  }
+  .cronograma td:first-child {
+    width: 60%;
+  }
+  
+  .footer-note {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .invitation-footer {
+    text-align: center;
+    border-top: 2px solid #900;
+    font-weight: bold; 
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-top: auto; 
+  }
+  
+  .invitation-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .invitation-container li{
+    margin-left: 50px;
+  }
+  

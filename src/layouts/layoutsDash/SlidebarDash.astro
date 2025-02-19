@@ -1,0 +1,191 @@
+---
+let visibleSection = 'main';
+
+const handleNavigation = (section: string) => {
+  visibleSection = section;
+};
+
+---
+<script>
+  window.onload = () => {
+    const docenteNombre = localStorage.getItem("docenteNombre");
+    const docenteApellidoPaterno = localStorage.getItem("docenteApellidoPaterno");
+
+    const docenteNombreElement = document.getElementById("docenteNombre");
+
+    // Aseguramos que el nombre no sea null y que el DOM esté listo
+    if (docenteNombreElement && docenteNombre && docenteApellidoPaterno) {
+      docenteNombreElement.textContent = `${docenteNombre} ${docenteApellidoPaterno}`;
+      docenteNombreElement.style.display = 'inline'; 
+    }
+  };
+</script>
+<div>
+  <input type="checkbox" class="menu__checkbox" id="sideview-crawl" />
+  <div class="side-view">
+    <nav class="admin-view__menu">
+      <div class="admin-view__header">
+        <h3 class="company-name">
+          <span>Dashboard Docente</span>
+        </h3>
+        <div class="menu-icon">
+          <label for="sideview-crawl" class="menu-bar">
+            <svg>
+              <use xlink:href="./icons.svg#icon-menu"></use>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="user-profile">
+        <h3 class="admin-name">
+          <span id="docenteNombre" class="hidden">Cargando...</span>
+        </h3>
+      </div>
+      <ul class="side-nav">
+        <li 
+          class={visibleSection === 'main' ? 'side-nav__active' : ''} 
+          onclick={`handleNavigation('main')`}
+        >
+          <a href="dashboardDoc/perfil/perfil">
+            <span>Perfil</span>
+          </a>
+        </li>
+        <li 
+          class={visibleSection === 'products' ? 'side-nav__active' : ''} 
+          onclick={`handleNavigation('products')`}
+        >
+          <a href="#">
+            <span>Postulaciones Disponibles</span>
+          </a>
+        </li>
+        <li 
+          class={visibleSection === 'users' ? 'side-nav__active' : ''} 
+          onclick={`handleNavigation('users')`}
+        >
+          <a href="#">
+            <span>Mis postulaciones</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</div>
+
+<style>
+    *,
+    :root {
+
+ 
+  --white-color: #efefef;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.side-view {
+  height: 77%;
+  width: 20rem;
+  position: fixed;
+  z-index: 999;
+  background-color: #006bc8;
+  color: var(--white-color);
+}
+
+.menu-icon {
+  border-radius: 50%;
+  padding: 0.7rem;
+  background: var(--white-color);
+}
+
+.menu-icon svg {
+  height: 3rem;
+  width: 3.5rem;
+  fill: var(--dark-green-color);
+  cursor: pointer;
+}
+
+.admin-view__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2.5rem;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.user-profile .admin-name {
+  font-size: 1.3rem;
+}
+
+.side-nav {
+  list-style: none;
+}
+
+.side-nav svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--white-color);
+  margin-right: 5rem;
+}
+
+.side-nav li {
+  margin: 1.5rem 0;
+  border-left: 0 solid #fff;
+  transition: all 0.1s;
+}
+
+.side-nav__active,
+.side-nav li:hover {
+  border-left: 4px solid #fff !important;
+}
+
+.side-nav li a:link,
+.side-nav li a:visited {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.side-nav li a:hover,
+.side-nav li a:active {
+  transform: translateX(3px);
+}
+
+.menu__checkbox:checked ~ .side-view {
+  width: 9.2rem;
+}
+
+.menu__checkbox:checked ~ .side-view .user-profile,
+.menu__checkbox:checked ~ .side-view .admin-view__header h3,
+.menu__checkbox:checked ~ .side-view .side-nav li a span {
+  display: none;
+}
+
+.menu__checkbox:checked ~ .side-view .side-nav li a svg {
+  position: fixed;
+}
+
+.menu__checkbox:checked ~ .side-view .side-nav li:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.hidden {
+    display: none;
+  }
+
+</style>
+

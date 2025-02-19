@@ -1,0 +1,135 @@
+---
+import type { only } from "node:test"
+import NotificacionesCampana from "./convocatorias/notificaciones/NotificacionesCampana"
+---
+
+<header>
+  <a id="logoEsam" href="/"> </a>
+  <h1 id="titulo">SISTEMA ACADÉMICO</h1>
+  <a id="logoEsamMobile" href="/">
+    <h1 id="tituloMobile">SISTEMA ACADÉMICO</h1>
+  </a>
+  <div style="margin-right auto; padding-right: 30px;">
+    <NotificacionesCampana client:only="react" /> 
+  </div>
+</header>
+<div class="barraAmarilla"></div>
+
+<style>
+  #logoEsamMobile,
+  #titloMobile {
+    display: none;
+  }
+
+  #logoEsam {
+    text-decoration: none;
+    background-image: url(/images/logoEsam.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    margin-left: 70px;
+    width: 160px;
+
+    border: 0 solid;
+
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &:hover {
+      box-shadow:
+        inset 0 0 30px rgba(255, 255, 255, 0.267),
+        0 0 20px rgba(255, 255, 255, 0.2);
+      outline-offset: 15px;
+      outline-color: rgba(255, 255, 255, 0);
+    }
+  }
+
+  header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 1fr auto; 
+  height: 80px;
+  width: 100%;
+  background-image: linear-gradient(to right, #095b95, #01101a);
+  align-items: center;
+  justify-items: center;
+}
+  @keyframes degrade {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes iniciar {
+    0% {
+      margin-top: 3%;
+
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+
+      margin-top: 1rem;
+    }
+  }
+
+  #titulo {
+    margin-right: 150px;
+    font-size: 32px;
+  }
+
+  @media (max-width: 768px) {
+    header {
+    grid-template-columns: 80% 1fr auto; /* Añade auto para el contenedor de la campana */
+  }
+
+    #logoEsam,
+    #titulo {
+      display: none;
+    }
+
+    #logoEsamMobile {
+      text-decoration: none;
+      display: block;
+      background-image: url(/images/isotipo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 80px;
+      height: 40px;
+    }
+
+    #tituloMobile {
+      margin-left: 15px;
+      padding-left: 40px;
+      font-size: 18px;
+      margin-top: -2px;
+    }
+  }
+
+  .barraAmarilla {
+    background-image: linear-gradient(
+      to right,
+      #fff000,
+      #cc9600,
+      #fff000,
+      #cc9600,
+      #fff000,
+      #cc9600
+    );
+    height: 10px;
+    width: 100%;
+    background-size: 550% 100%;
+  }
+</style>

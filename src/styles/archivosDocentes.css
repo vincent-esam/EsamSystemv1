@@ -1,0 +1,84 @@
+/* Estilo del botón */
+.backbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .back-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+  }
+  
+  .backbutton:hover .back-icon {
+    transform: scale(1.2);
+  }
+  
+  .docente-info {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .docente-info h1 {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 22px;
+    margin: 0; /* Elimina márgenes no deseados */
+  }
+  
+  /* Contenedor general alineado a la izquierda */
+  .archivos-container {
+    margin-top: 2rem;
+    padding-left: 40px;
+    max-width: 800px;
+  }
+  
+  /* Categorías y archivos */
+  .categoria {
+    margin-bottom: 1rem; /* Espaciado entre categorías */
+  }
+  
+  .categoria h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Elimina márgenes no deseados */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Lista de archivos */
+  .archivo-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina márgenes entre lista y otras categorías */
+  }
+  
+  .archivo-lista li {
+    margin-bottom: 0.5rem; /* Espaciado entre archivos */
+  }
+  
+  /* Enlaces de archivos */
+  .archivo-link {
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .archivo-link:hover {
+    color: #0056b3;
+  }
+  
+  .archivo-fecha {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 5px;
+  }
+  

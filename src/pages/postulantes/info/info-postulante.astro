@@ -1,0 +1,92 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import PostulanteInfo from "../../../components/docentes/PostulanteInfo.astro";
+
+import LayoutForm from "../../../layouts/LayoutForm.astro";
+import "../../../styles/postulantes.css";
+
+// No necesitas obtener el idDocente aquí, ya que lo harás en el script del cliente
+---
+
+<script>
+// Obtener el idDocente desde la URL
+const url = new URL(window.location.href);
+const idDocente = url.searchParams.get('idDocente');
+
+if (!idDocente) {
+  console.error('No se proporcionó un ID en la URL.');
+  // Puedes redirigir a una página de error o mostrar un mensaje
+  document.body.innerHTML = '<p>No se proporcionó un ID en la URL.</p>';
+} else {
+  console.log('El ID es:', idDocente);
+
+  // Hacer una solicitud a la API para obtener los datos del docente
+  fetch(`http://localhost/ESAM2/SystemEsam/src/pages/api/docentes/getDocenteById.php?idDocente=${idDocente}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error al obtener los datos del docente: ${response.statusText}`);
+      }
+      return response.json();
+    })
+    .then(docenteData => {
+      // Mostrar la información del docente en la página
+      const container = document.getElementById('docente-info');
+
+      if (docenteData) {
+        // Renderizar la información del docente
+        container.innerHTML = `
+          <h1>${docenteData.nombres}</h1>
+          <p>Correo: ${docenteData.correo}</p>
+          <p>Teléfono: ${docenteData.telefono}</p>
+          <!-- Agrega más campos según la estructura de docenteData -->
+        `;
+
+        // Renderizar componentes dinámicos (si es necesario)
+        const buttonsContainer = document.getElementById('buttons-container');
+        buttonsContainer.innerHTML = `
+          <div class="left-buttons">
+            <div class="download-pdf">
+              <!-- Renderizar PostulantePDF si es necesario -->
+            </div>
+            ${docenteData.agendado === 0 ? `
+              <!-- Renderizar ScheduleMeetingButton si es necesario -->
+            ` : ''}
+            ${docenteData.agendado === 1 && docenteData.detalles && docenteData.detalles.length > 0 ? `
+              <div class="meeting-details">
+                <h2>Reunión Agendada</h2>
+                <p><strong>Fecha:</strong> ${docenteData.detalles[0].fecha || "Sin información"}</p>
+                <p><strong>Link de Zoom:</strong> ${docenteData.detalles[0].link ? `<a href="${docenteData.detalles[0].link}" target="_blank" rel="noopener noreferrer">Ingrese aquí</a>` : "No disponible"}</p>
+                <!-- Renderizar ReprogramMeetingButton si es necesario -->
+              </div>
+            ` : ''}
+          </div>
+          <div class="right-buttons">
+            <!-- Renderizar AprobarRechazarDocente si es necesario -->
+          </div>
+        `;
+      } else {
+        container.innerHTML = '<p>No se encontró información del docente.</p>';
+      }
+    })
+    .catch(error => {
+      console.error('Hubo un problema al obtener los datos del docente:', error);
+      document.getElementById('docente-info').innerHTML = '<p>Hubo un error al cargar la información del docente.</p>';
+    });
+}
+</script>
+
+<LayoutForm title="Sistema Académico ESAM | Información del Docente">
+  <div id="docente-info">
+    <!-- Aquí se renderizará la información del docente -->
+    <p>Cargando información del docente...</p>
+  </div>
+
+  <div id="buttons-container">
+    <!-- Aquí se renderizarán los botones y detalles de la reunión -->
+  </div>
+
+  <section class="container">
+    <!-- Aquí puedes renderizar PostulanteInfo si es necesario -->
+    <div id="postulante-info"></div>
+  </section>
+</LayoutForm>

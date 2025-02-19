@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura';
+    src: url(../font/Futura\ Md\ BT\ Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+
+    background-image: linear-gradient(to right, #d3dce0, #beced3);
+    /* background: 
+    linear-gradient(to right, rgba(190,206,211,0.95),rgba(210,220,224,0.9)),
+    url(/img/clases.jpg);
+    background-size: cover;  */
+
+}
+
+h1 {
+    src: url(../font/Futura\ Md\ BT\ Medium.ttf);
+    font-variant: normal;
+    font-style: normal;
+    margin-left: -200px;
+    font-size: 25px;
+    color: #d3dce0;
+}
+
+h5 {
+    font-family: 'Futura';
+    src: url(../font/Futura\ Md\ BT\ Medium.ttf);
+    color: #777e7f;
+    padding: 3px;
+}
+
+.piePagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2rem;
+    text-align: center;
+}
+
+#logoEsam {
+
+    background-image: url(../img/logoEsam.png);
+    background-repeat: no-repeat;
+
+
+    background-size: cover;
+    margin-left: 70px;
+    width: 160px;
+
+    border: 0 solid;
+
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-offset: 15px;
+        outline-color: rgba(255, 255, 255, 0);
+
+
+    }
+}
+
+header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(to right, #095b95, #01101a);
+    /* background-image: linear-gradient(to right, rgba(52, 53, 124, 0.8),30%,rgba(21, 104, 153, 0.0)); */
+    align-items: center;
+    justify-items: center;
+
+}
+
+@keyframes degrade {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes iniciar {
+    0% {
+        margin-top: 3%;
+
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+
+        margin-top: 1rem;
+        ;
+    }
+
+}
+
+.barraAmarilla {
+    background-image: linear-gradient(to right, #fff000, #cc9600, #fff000, #cc9600, #fff000, #cc9600, #fff000, #cc9600, #fff000, #cc9600, #fff000, #cc9600, #fff000, #cc9600);
+    height: 10px;
+    width: 100%;
+    background-size: 550% 100%;
+
+    animation-name: degrade;
+    animation-duration: 25s;
+
+    animation-iteration-count: infinite;
+}
+
+.boton {
+
+    margin: 15px;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 11px rgb(160, 163, 163);
+
+    &:hover {
+        transform: scale(1.1);
+        filter: hue-rotate(210deg) saturate(3);
+    }
+}
+
+#docentesimg {
+
+    margin: 15px;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 11px rgb(160, 163, 163);
+
+    &:hover {
+        transform: scale(1.1);
+        filter: hue-rotate(150deg) saturate(3);
+    }
+}
+
+.iconosCentro {
+
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    animation-name: iniciar;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+footer {
+    margin-top: 9.5rem;
+    height: 120px;
+    width: 100%;
+    background-color: #b8c7cc;
+
+    position: relative;
+
+    /* position: fixed; */
+    bottom: 0px;
+}
+
+@media (max-width:1500px) {
+    footer {
+        position: relative;
+        height: 120px;
+
+
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    footer {
+        position: relative;
+        height: 180px;
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+    }
+
+    #logoEsam {
+        background-image: url(/images/isotipo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+    }
+
+    #titulo {
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+.redesSociales {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.ico {
+    &:hover {
+
+        transform: scale(1.2);
+    }
+}
