@@ -13,6 +13,7 @@ export const infoDocumentos = [
 ];
 
 export const infoGenero = [
+
   {
     id: 1,
     gen: "Masculino",
@@ -45,6 +46,8 @@ export const extencion = [
     nombre: "lp",
   },
 
+
+  
   {
     id: 3,
     ext: "Or",
